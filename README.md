@@ -1,4 +1,6 @@
-<h1>AluraMed | Dashboard Responsiva</h1>
+# 🌟 7 Days of Code - Alura Challenge - OptimusTech
+
+Este repositório contém o projeto desenvolvido durante o desafio **7 Days of Code** oferecido pela escola de tecnologia **[Alura](https://www.alura.com.br/)**. 🚀
 
 <h2>📖Sobre o Projeto</h2>
 <p>
