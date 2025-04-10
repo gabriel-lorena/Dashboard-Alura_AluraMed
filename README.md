@@ -15,7 +15,7 @@ por meio da criação de uma dashboard de controle de consultas agendadas para m
 </div>
 
 <h2>📸Screenshot</h2>
-<div> align="center"
+<div align="center">
 img src="https://github.com/user-attachments/assets/0b7bfdc0-9d31-45ed-8565-194b1ce2a044" width="200px" /
 </div>
 
