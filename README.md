@@ -15,7 +15,7 @@ por meio da criação de uma dashboard de controle de consultas agendadas para m
 </div>
 
 <h2>📸Screenshot</h2>
-![image](https://github.com/user-attachments/assets/f28b1f4e-a9f3-4067-90aa-5fe480ff03fb)
+![image](https://github.com/user-attachments/assets/f947c331-cad5-42b8-b0b5-b50aa635e80d)
 
 <h2>🎯Objetivos Atingidos</h2>
 <p>Praticar responsividade em páginas web utilizando HTML e CSS.</p>
