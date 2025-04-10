@@ -1,0 +1,350 @@
+<!--
+REGRAS:
+    Nomeação de classes:
+        about_us-title (nome composto do pai, nome filho)
+    Organizações das seções do site:
+        Usar a tag section com id, apenas para organização e separação
+-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AluraMed</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+        <link rel="stylesheet" href="script2.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="status_bar">
+            <span class="hour"></span>
+            <div class="status_bar-icons">
+              <span> <img src="/img/icon_menu.png" alt="sinal"></span>
+              <span> <img src="/img/icon_batery.svg" alt="bateria"></span>
+              <span> <img src="/img/icon_wifi.svg" alt="wifi"></span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+        <header class="header">
+            <img src="img/profile_sonia.svg" alt="imagem de profile" class="header_profile">
+                <div class="info">
+                    <h1 class="header_name"> Olá, Sônia</h1>
+                    <h2 class="header_totalConsultation">Mais 4 consultas hoje</h2>
+                </div>
+        </header>
+        
+        <main>
+            <section id="consultas">
+                <div class="dia"> Hoje </div>
+                <div class="card" id="card1_Hoje">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_luciana.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Luciana Dias</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_camera.svg" alt="Ícone de vídeo">
+                                    Consulta remota
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 14:00 - 15:00 (1 hora)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-video">Ligar por vídeo</button>
+                        <button class="card_btn-audio">Ligar por áudio</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card2_Hoje">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_larissa.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Larissa Santana</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_local.svg" alt="Ícone de pin de mapa">
+                                    Consulta no local
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 16:00 - 17:00 - (1 hora)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-endereco">Ver endereço</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card3_Hoje">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_marcos.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Marcos Correia</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_camera.svg" alt="Ícone de vídeo">
+                                    Consulta remota
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 17:20 - 18:00 (40 minutos)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-video">Ligar por vídeo</button>
+                        <button class="card_btn-audio">Ligar por áudio</button>
+                    </div>
+                </div>
+
+                <div class="dia"> Amanhã </div>
+                <div class="card" id="card1_Amanha">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_clara.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Clara Lemos</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_local.svg" alt="Ícone de pin de mapa">
+                                    Consulta no local
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 18:00 - 19:00 - (1 hora)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-endereco">Ver endereço</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card2_Amanha">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_luciana.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Luciana Dias</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_camera.svg" alt="Ícone de vídeo">
+                                    Consulta remota
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 14:00 - 15:00 (1 hora)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-video">Ligar por vídeo</button>
+                        <button class="card_btn-audio">Ligar por áudio</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card3_Amanha">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_marcos.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Marcos Correia</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_camera.svg" alt="Ícone de vídeo">
+                                    Consulta remota
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 17:20 - 18:00 (40 minutos)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-video">Ligar por vídeo</button>
+                        <button class="card_btn-audio">Ligar por áudio</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card4_Amanha">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_larissa.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Larissa Santana</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_local.svg" alt="Ícone de pin de mapa">
+                                    Consulta no local
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 16:00 - 17:00 - (1 hora)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-endereco">Ver endereço</button>
+                    </div>
+                </div>
+
+                <div class="dia"> Quarta-feira </div>
+                <div class="card" id="card1_Quarta">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_clara.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Clara Lemos</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_local.svg" alt="Ícone de pin de mapa">
+                                    Consulta no local
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 18:00 - 19:00 - (1 hora)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-endereco">Ver endereço</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card2_Quarta">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_luciana.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Luciana Dias</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_camera.svg" alt="Ícone de vídeo">
+                                    Consulta remota
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 14:00 - 15:00 (1 hora)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-video">Ligar por vídeo</button>
+                        <button class="card_btn-audio">Ligar por áudio</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card3_Quarta">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_marcos.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Marcos Correia</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_camera.svg" alt="Ícone de vídeo">
+                                    Consulta remota
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 17:20 - 18:00 (40 minutos)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-video">Ligar por vídeo</button>
+                        <button class="card_btn-audio">Ligar por áudio</button>
+                    </div>
+                </div>
+
+                <div class="card" id="card4_Quarta">
+                    <div class="card_header">
+                        <div class="card_profile">
+                            <img src="img/profile_larissa.svg" alt="Foto de perfil">
+                            <span class="card_profile_info">
+                                <span class="card_profile_info-name">Larissa Santana</span>
+                                <span class="card_profile_info-subtitle">
+                                    <img src="img/icon_local.svg" alt="Ícone de pin de mapa">
+                                    Consulta no local
+                                </span>
+                            </span>
+                        </div>
+                        <div class="card_header_chat">
+                            <img class="card_header_chat-icon" src="img/icon_chat.svg" alt="Ícone de chat">
+                        </div>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="card_time"> 16:00 - 17:00 - (1 hora)</div>
+                    <div class="card_btns">
+                        <button class="card_btn-endereco">Ver endereço</button>
+                    </div>
+                </div>
+                <br><br>
+                
+            </section>    
+        </main>
+
+    <footer>
+        <div class="footer-icons">
+            <div>
+                <img src="img/icon_calendar.png" alt="Ícone de calendário" class="footer-icons">
+                <span>Consultas</span>
+            </div>
+            <div>
+                <img src="img/icon_clients.png" alt="Ícone de clientes" class="footer-icons">
+                <span>Clientes</span>
+            </div>
+            <div>
+                <img src="img/icon_report.png" alt="Ícone de relatório" class="footer-icons">
+                <span>Relatórios</span>
+            </div>
+            <div>
+                <img src="img/icon_menu.png" alt="Ícone de menu" class="footer-icons">
+                <span>Menu</span>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+        <div class="button-container" id="container">
+            <button class="btn" id="mainBtn"> 
+                <div class="horizontal-line"></div>
+                <div class="vertical-line"></div>
+            </button> 
+            <button class="btn sub-btn"> 
+                <img src="img/icon_local-white.svg" alt="Ícone de pin de mapa">
+            </button> 
+            <button class="btn sub-btn"> 
+                <img src="img/icon_camera-white.svg" alt="Ícone de pin de mapa">
+            </button> 
+        </div>
+        <script src="script2.js"></script>
+    </footer>
+    
+    
+    
+    </body>
+</html>

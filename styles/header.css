@@ -1,0 +1,32 @@
+.header{
+    display: flex; 
+    align-items: center;     
+    top: 4.0625em;
+    left: 1em;
+    margin: 2em 7.5625em 1.375em 1em;
+}
+
+.header_profile{
+    display: flex; 
+    align-items: center; 
+    width: 3.5625em;
+    height: 3.5625em;
+    border-radius: 50%;
+}
+
+.info {
+    padding-left: 1em;
+}
+
+.header_name{
+    font-weight: 700;
+    font-size: 1.375em;
+    color: var(--principal_text-color);
+}
+
+.header_totalConsultation{
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 160%;
+    color: var(--h2-color);     
+}

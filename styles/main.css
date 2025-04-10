@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    margin-left: 1rem; 
+}
+
+.dia {
+    font-weight: 700;
+    font-size: 1rem; 
+    line-height: 160%;
+    padding: 0.5rem 0 0.5rem 0; 
+    color: var(--principal_text-color);
+}
+
+.card {
+    width: 20.5rem; 
+    height: 10.625rem; 
+    padding: 1rem; 
+    border: 0 solid rgba(236, 236, 236, 1);
+    border-radius: 0.5rem; 
+    backdrop-filter: blur(1.375rem); 
+    background-color: var(--card_consult-color);
+    margin-bottom: 1rem; 
+}
+
+.card_header {
+    display: flex;
+}
+
+.card_profile {
+    display: flex;
+    align-items: center;
+}
+
+.card_profile img {
+    width: 2rem; 
+    height: 2rem; 
+    top: 12.90625rem; 
+    left: 2rem; 
+    border-radius: 1rem; 
+}
+
+.card_profile_info {
+    padding-left: 1rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 1rem; 
+    top: 11.90625rem; 
+    left: 2rem; 
+}
+
+.card_profile_info-name {
+    color: var(--principal_text-color);
+    font-weight: 700;
+    font-size: 0.875rem; 
+    line-height: 160%;
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+
+.card_profile_info-subtitle {
+    width: auto;
+    font-weight: 400;
+    font-size: 0.75rem; 
+    line-height: 160%;
+    vertical-align: middle;
+    color: var(--h2-color);
+}
+
+.card_profile_info-subtitle img {
+    width: 1rem; 
+    height: 0.666625rem; 
+    top: 14.291875rem; 
+    left: 5rem; 
+}
+
+.card_header_chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem; 
+    height: 2rem; 
+    top: 12.625rem; 
+    left: 18.5rem; 
+    background-color: var(--card_consult_chat-color);
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.card_header_chat-icon {
+    height: 0.8333345625rem; 
+    top: 13.208125rem; 
+    left: 19.083125rem; 
+    width: auto;
+}
+
+.gray-line {
+    position: absolute;
+    margin-top: 4.3125rem; 
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0.0625rem; 
+    background-color: var(--line-color);
+    opacity: 10%;
+}
+
+.card_time {
+    width: auto;
+    height: 1.1875rem; 
+    top: 16.5625rem; 
+    left: 2rem; 
+    font-weight: 500;
+    font-size: 0.75rem; 
+    line-height: 160%;
+    letter-spacing: 0;
+    margin-top: 1.375rem; 
+    padding-top: 0.5625rem; 
+    color: var(--principal_text-color);
+}
+
+.card_btns {
+    justify-content: space-around;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card_btn-video,
+.card_btn-audio,
+.card_btn-endereco {
+    height: 3rem; 
+    top: 18.25rem; 
+    left: 2rem; 
+    border-radius: 0.5rem; 
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 0.875rem; 
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card_btn-video {
+    width: 8.6875rem; 
+    border: none;
+    background-color: var(--btn_orange-color);
+    box-shadow: 0 0.25rem 1rem 0 rgba(255, 176, 80, 0.16); 
+    color: var(--card_consult-color);
+}
+
+.card_btn-audio {
+    width: 8.6875rem; 
+    border: 0.0625rem solid rgba(236, 236, 236, 1); 
+    background: var(--card_consult-color);
+    color: var(--principal_text-color);
+}
+
+.card_btn-endereco {
+    width: 18.5rem; 
+    top: 29.875rem; 
+    background: rgba(72, 148, 255, 1);
+    border: none;
+    box-shadow: 0 0.25rem 1rem 0 rgba(72, 148, 255, 0.16); 
+    color: var(--card_consult-color);
+}
+
+@media (min-width: 768px) {
+    main {
+        margin: 0 1rem;
+        width: auto;    
+        height: 10.625rem;
+    }
+
+    #consultas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .dia {
+        grid-column: 1 / -1;
+        padding: 0.5rem 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (min-width: 973px) {
+    main {
+        margin: 0 1rem;
+        width: auto;    
+        height: 10.625rem;
+    }
+
+    #consultas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .dia {
+        grid-column: 1 / -1;
+        padding: 0.5rem 0;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .card_btn-video,
+    .card_btn-audio {
+        width: 172px;
+        height: 48px;
+    }
+
+    .card_btn-endereco {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+

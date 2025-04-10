@@ -1,0 +1,39 @@
+@import url("styles/header.css");
+@import url("styles/main.css");
+@import url("styles/footer.css");
+@import url("styles/status_bar.css");
+
+:root{
+    /*Fonts*/   
+        --principal-font: "Montserrat"; 
+    /*Background colors*/   
+        --principal-color: rgba(239, 240, 244, 1);
+        --card_consult-color: rgba(255, 255, 255, 1);
+        --card_consult_chat-color: rgba(246, 246, 246, 1);
+        
+    /*Text colors*/
+        --status_text-color:rgba(51, 51, 51, 1);
+        --principal_text-color: rgba(70, 70, 70, 1);
+        --h2-color:rgba(163, 163, 163, 1);
+        --colorful_button-text:rgba(255, 255, 255, 1);
+    /*Object colors*/
+        --line-color:rgba(70, 70, 70, 1);
+        --btn_orange-color:rgba(255, 176, 80, 1);
+        --btn_blue-color:rgba(72, 148, 255, 1);
+}
+
+body{
+    font-family: var(--principal-font);
+    background-color: var(--principal-color);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+

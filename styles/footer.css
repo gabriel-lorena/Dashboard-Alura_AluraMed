@@ -1,0 +1,117 @@
+footer{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000; /* Mantém o footer acima de outros elementos */
+    bottom: 0;
+    width: 100%;
+    height: 3.625rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    background-color: var(--card_consult-color);
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
+    padding: 0.5rem 0.875rem;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 2.5rem;
+    justify-self: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 160%;
+    text-align: center;
+  }
+
+
+/*Botões flutuantes*/
+.overlay {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+    z-index: 1; /* Fica atrás dos botões */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3; /* Fica acima do overlay */
+    width: 100vh;
+    align-items: end;
+    margin-right: 1vh;
+    margin-left: 0;
+}
+
+.btn{
+    width: 3.5rem;
+    height: 3.5rem;
+    top: -100px;
+    right: -8.625rem;
+    background:var(--btn_blue-color);
+    position: relative;
+    box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.5);
+    bottom: 7.875rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.625rem;
+    border: none;
+    align-items: end;
+}
+
+.horizontal-line, .vertical-line{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 1);
+}
+
+.horizontal-line{
+    width: 1rem;
+    height: 0.125rem;
+    border-radius: 1.25rem;
+}
+
+.vertical-line{
+    width: 0.125rem;
+    height: 1rem;
+    border-radius: 1.25rem;
+}
+
+/* Esconde os botões secundários por padrão */
+.sub-btn {
+    display: none;
+}
+
+/* Classe para mostrar os botões quando ativo */
+.active .sub-btn {
+    display: block;
+    transform: translateY(-200px);
+}
+
+/* Ajuste para o segundo sub-botão (mais acima) */
+.active .sub-btn:nth-child(1) {
+    transition-delay: 0.2s; /* Atraso maior para o primeiro botão, criando o efeito de "subida" */
+}
+
+.active .sub-btn img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (min-width: 768px) {
+.button-container {
+    width: 100vh;
+    align-items: end;
+}
+}
