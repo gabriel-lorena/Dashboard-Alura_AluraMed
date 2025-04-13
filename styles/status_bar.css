@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    width: 100%;
+    width: auto;
     height: 2.0625rem;
     background-color: var(--card_consult-color);
     padding: 0 0.625rem;
