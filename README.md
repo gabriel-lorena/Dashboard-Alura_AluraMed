@@ -1,4 +1,4 @@
-# 🌟 7 Days of Code - Alura Challenge - OptimusTech
+# 🌟 7 Days of Code - Alura Challenge - AluraMed
 
 Este repositório contém o projeto desenvolvido durante o desafio **7 Days of Code** oferecido pela escola de tecnologia **[Alura](https://www.alura.com.br/)**. 🚀
 
